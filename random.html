@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机刷新位置游戏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="E:\图片\【哲风壁纸】护眼-风景.png" alt="照片"></div>
+    <script>
+        let div = document.querySelector('div')
+        div.addEventListener("mouseover", function () {
+            let left = Math.floor(Math.random() * window.innerWidth)
+            let top = Math.floor(Math.random() * window.innerHeight)
+            div.style.left = left + 'px'
+            div.style.top = top + 'px'
+        })
+    </script>
+</body>
+
+</html>

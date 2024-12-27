@@ -1,0 +1,87 @@
+h1 {
+    color: aliceblue;
+}
+
+/* 测试优先级 */
+h1 {
+    color: aqua;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+    margin-left: 30px;
+    background-color: rgb(214, 156, 156);
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: aqua;
+}
+
+/* div {
+    width: 1000px;
+    height: 20px;
+    padding-left: 300px;
+    background-color: green;
+} */
+
+.d {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#d1 {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    /*原来是设置方向内的flex项的排布方向啊*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.d2 {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.d3 {
+    order: -1;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+
+.d4 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(248, 116, 116);
+}
+
+.d5 {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.d6 {
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+}
